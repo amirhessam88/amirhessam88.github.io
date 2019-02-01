@@ -28,11 +28,15 @@ url: https://amirhessam88.github.io
 linkedin_username: amirhessam
 github_username:  amirhessam88
 
+show_excerpts: true
+
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jemoji
+  - jekyll-archives
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
