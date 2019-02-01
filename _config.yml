@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Amirhessam Tahmassebi
+title: Amir The Data Scientist!
 email: admin@amirhessam.com
 description: >- # this means to ignore newlines until "baseurl:"
         My name is Amirhessam Tahmassebi.
@@ -27,7 +27,6 @@ url: https://amirhessam88.github.io
 #twitter_username: jekyllrb
 linkedin_username: amirhessam
 github_username:  amirhessam88
-orcid_username: 0000-0003-4677-6907
 
 # Build settings
 markdown: kramdown
