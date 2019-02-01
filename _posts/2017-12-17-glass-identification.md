@@ -4,7 +4,7 @@ title : "Glass Identification"
 date : 2017-12-17
 permalink: /glass-identification/
 ---
-![glass-header](/notebooks/glass-identification_files/output_1_0.jpeg)
+![glass-header](/images/glass-header.jpeg)
 
 ```python
 Image(filename="../notebooks/glass-identification_files/output_1_0.jpg")
