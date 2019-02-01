@@ -1,7 +1,7 @@
-
 ---
 layout : post
-title : Glass Identification
+title : "Glass Identification"
+date : 2017-12-17
 permalink: /glass-identification/
 ---
 
