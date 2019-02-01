@@ -6,7 +6,7 @@ permalink: /glass-identification/
 ---
 
 ```python
-Image(filename="../Images/01.jpg")
+Image(filename="../notebooks/glass-identification_files/output_1_0.jpg")
 ```
 
 
@@ -25,7 +25,7 @@ Image(filename="../Images/01.jpg")
 
 
 ```python
-Image(filename="../Images/02.jpg")
+Image(filename="../notebooks/glass-identification_files/output_5_0.jpg")
 ```
 
 
