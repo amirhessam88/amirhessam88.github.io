@@ -5,6 +5,7 @@ date : 2018-01-30
 permalink: /probabilistic-neural-networks/
 ---
 ![pnn-header](/images/pnn-header.png)
+
 ### Introduction
 
 ## A probabilistic neural network (PNN) is a feedforward neural network, which is widely used in classification and pattern recognition problems. In the PNN algorithm, the parent probability distribution function (PDF) of each class is approximated by a Parzen window and a non-parametric function. Then, using PDF of each class, the class probability of a new input data is estimated and Bayes’ rule is then employed to allocate the class with highest posterior probability to new input data.
