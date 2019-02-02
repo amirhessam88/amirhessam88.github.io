@@ -6,7 +6,6 @@ permalink: /regression-error-characteristics-curve/
 ---
 ![rec-header](/images/rec-header.png)
 
-# Regression Error Characteristics Curve
 
 ## Introduction
 
