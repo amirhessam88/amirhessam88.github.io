@@ -6,9 +6,11 @@ permalink: /about/
 
 My name is Amirhessam Tahmassebi.
 
-I am currently a Data Scientist at [Cerner Corporation](http://www.cerner.com). I am also an affiliated courtesy faculty in the [Department of Scientific Computing](https://sc.fsu.edu) at [Florida State University](https://fsu.edu). 
+I am currently a Data Scientist at Cerner Intelligence of the [Cerner Corporation](http://www.cerner.com) at the Innovations Campus, Kansas City, Missouri.
+I am also an affiliated courtesy faculty in the [Department of Scientific Computing](https://sc.fsu.edu) at [Florida State University](https://fsu.edu). 
 
-This is only a showcase of few "Public" Data Science projects I have done. My formal website is [amirhessam.com](https://www.amirhessam.com).
+This is only a showcase of few "Public" Data Science projects I have done.
+My formal website is [amirhessam.com](https://www.amirhessam.com).
 
 
 
