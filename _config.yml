@@ -16,11 +16,10 @@
 title: Amirhessam Tahmassebi
 email: admin@amirhessam.com
 description: >- # this means to ignore newlines until "baseurl:"
-        My name is Amirhessam Tahmassebi.
         I am currently a Data Scientist at Cerner Corporation.
         I am also an affiliated courtesy faculty in the Department 
-        of Scientific Computing at Florida State University. 
-
+        of Scientific Computing at Florida State University.
+        This website is my \"Data Science/Scientific Computing\" Portfolio.
         
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://amirhessam88.github.io
