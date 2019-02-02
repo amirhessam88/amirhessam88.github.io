@@ -6,22 +6,12 @@ permalink: /glass-identification/
 ---
 ![glass-header](/images/glass-header.jpeg)
 
-```python
-Image(filename="../notebooks/glass-identification_files/output_1_0.jpg")
-```
 
 ## Introduction
 
 ### Glass fragments are one of the most frequently used items in forensic science. In most of the crime scences such as house-breaking, even small fragments of the glass attached to the clothes of the person who is suspected would solve the problem. Even from small glass fragments, based on the elemntal composition and more importantly the refractive index, we can say where this fragment comes from. Does it come from a house window or car windshield or a beer bottle, and etc. In this regard, I have employed the "Glass Identification" dataset, published by Ian W Evett [1]. He worke several years as an operational forensic scientist.
 
 ### The most useful characteristics of glass for forensic purposes represents the  refractive index (RI) which has a high precision  even for small pieces. For even larger fragments, the elemental components can be obtained using a Scanning Electron Microscope. The data colleceted for 214 glass samples and were analyzed at the Home Office Forensic Science Laboratory, Birmingham.
-
-
-
-```python
-Image(filename="../notebooks/glass-identification_files/output_5_0.jpg")
-```
-
 
 
 
