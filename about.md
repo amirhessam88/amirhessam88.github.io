@@ -12,9 +12,9 @@ This is only a showcase of few "Public" Data Science projects I have done. My fo
 
 
 
-## Please cite the following paper in case you use any content of this website. Thank You!
+Please cite the following paper in case you use any content of this website. Thank You!
 
-## https://doi.org/10.1117/12.2304418
+### [iDeepLe: Deep Learnig in a Flash](https://doi.org/10.1117/12.2304418)
 
 ### Bibtex Entry:
 
