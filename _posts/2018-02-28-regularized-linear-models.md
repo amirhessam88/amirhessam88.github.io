@@ -159,7 +159,7 @@ plt.show()
 ```
 
 
-![png](/notebooks/regularized-linear-models/output_10_0.png)
+![png](/notebooks/regularized-linear-models_files/output_10_0.png)
 
 
 # Noisy Sin(x) using Polynomial degree 25 and LASSO
