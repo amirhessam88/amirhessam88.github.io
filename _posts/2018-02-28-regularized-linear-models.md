@@ -59,7 +59,7 @@ plt.plot(xfit, yfit, "r", lw = 3);
 ```
 
 
-![png](/notebooks/regularized-linear-modelsls_files/output_3_0.png)
+![png](/notebooks/regularized-linear-models_files/output_3_0.png)
 
 
 
