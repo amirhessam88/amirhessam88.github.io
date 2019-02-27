@@ -71,11 +71,9 @@ plt.show()
 ```
 
 
-    <Figure size 720x720 with 0 Axes>
 
 
-
-![png](/notebooks/regularized-linear-models/output_4_1.png)
+![png](/notebooks/regularized-linear-models_files/output_4_1.png)
 
 
 # Nonlinear Transformation
@@ -101,7 +99,7 @@ plt.show()
 ```
 
 
-![png](/notebooks/regularized-linear-models/output_6_0.png)
+![png](/notebooks/regularized-linear-models_files/output_6_0.png)
 
 
 # Polynomial basis
@@ -118,7 +116,7 @@ plt.show()
 ```
 
 
-![png](/notebooks/regularized-linear-models/output_8_0.png)
+![png](/notebooks/regularized-linear-models_files/output_8_0.png)
 
 
 # Noisy Sin(x) using Polynomial basis functions and OLS
@@ -208,7 +206,7 @@ plt.show()
 
 
 
-![png](/notebooks/regularized-linear-models/output_12_1.png)
+![png](/notebooks/regularized-linear-models_files/output_12_1.png)
 
 
 
@@ -236,7 +234,7 @@ plt.show()
 ```
 
 
-![png](/notebooks/regularized-linear-models/output_13_0.png)
+![png](/notebooks/regularized-linear-models_files/output_13_0.png)
 
 
 
@@ -264,7 +262,7 @@ plt.show()
 ```
 
 
-![png](/notebooks/regularized-linear-models/output_14_0.png)
+![png](/notebooks/regularized-linear-models_files/output_14_0.png)
 
 
 
@@ -292,7 +290,7 @@ plt.show()
 ```
 
 
-![png](/notebooks/regularized-linear-models/output_15_0.png)
+![png](/notebooks/regularized-linear-models_files/output_15_0.png)
 
 
 
@@ -322,7 +320,7 @@ plt.show()
 ```
 
 
-![png](/notebooks/regularized-linear-models/output_16_0.png)
+![png](/notebooks/regularized-linear-models_files/output_16_0.png)
 
 
 
@@ -449,7 +447,7 @@ plt.show()
 ```
 
 
-![png](/notebooks/regularized-linear-models/output_17_0.png)
+![png](/notebooks/regularized-linear-models_files/output_17_0.png)
 
 
 # Loading Diabetes Dataset
@@ -598,7 +596,7 @@ plt.show()
 ```
 
 
-![png](/notebooks/regularized-linear-models/output_21_0.png)
+![png](/notebooks/regularized-linear-models_files/output_21_0.png)
 
 
 
@@ -740,7 +738,7 @@ plt.show()
 ```
 
 
-![png](/notebooks/regularized-linear-models/output_24_0.png)
+![png](/notebooks/regularized-linear-models_files/output_24_0.png)
 
 
 
@@ -1100,7 +1098,7 @@ _glmnet_plot_cv_score_alpha(X, y, is_classification=False, scoring="r2")
 ```
 
 
-![png](/notebooks/regularized-linear-models/output_32_0.png)
+![png](/notebooks/regularized-linear-models_files/output_32_0.png)
 
 
 
@@ -1207,7 +1205,7 @@ _glmnet_plot_cv_score_lambda(glmnet_model)
 ```
 
 
-![png](/notebooks/regularized-linear-models/output_34_0.png)
+![png](/notebooks/regularized-linear-models_files/output_34_0.png)
 
 
 
@@ -1216,7 +1214,7 @@ _glmnet_plot_coeff_path(glmnet_model, df_X)
 ```
 
 
-![png](/notebooks/regularized-linear-models/output_35_0.png)
+![png](/notebooks/regularized-linear-models_files/output_35_0.png)
 
 
 
