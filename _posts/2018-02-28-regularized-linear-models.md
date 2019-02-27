@@ -1,7 +1,7 @@
 ---
 layout : post
 title : "Regularized Linear Models"
-date : 2017-12-17
+date : 2018-02-28
 permalink: /regularized-linear-models/
 ---
 ![regularization-header](/images/regularization-header.png)
