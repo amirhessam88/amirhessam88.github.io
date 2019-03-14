@@ -30,7 +30,7 @@ github_username:  amirhessam88
 show_excerpts: true
 
 # Build settings
-markdown: maruku
+markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
