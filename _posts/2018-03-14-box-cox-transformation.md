@@ -9,7 +9,7 @@ permalink: /box-cox-transformation/
 
 ### Box-Cox tranformation is a simple generalization of the square root transformation and the log transformation.
 
-## $$\hat{x} = \begin{cases}
+ $$\hat{x} = \begin{cases}
                 \frac{x^{\lambda} - 1}{\lambda} & if \lambda \neq 0 \\
                  ln(x) & if \lambda = 0\\ \end{cases}$$
                  
