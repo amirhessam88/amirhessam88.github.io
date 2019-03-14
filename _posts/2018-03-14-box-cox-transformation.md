@@ -8,11 +8,11 @@ permalink: /box-cox-transformation/
 # Box-Cox Tranformation
 
 ### Box-Cox tranformation is a simple generalization of the square root transformation and the log transformation.
-
- $$\hat{x} = \begin{cases}
-                \frac{x^{\lambda} - 1}{\lambda} & if \lambda \neq 0 \\
-                 ln(x) & if \lambda = 0\\ \end{cases}$$
-                 
+ 
+## $$\hat{x} = \begin{cases}
+##                \frac{x^{\lambda} - 1}{\lambda} & if \lambda \neq 0 \\
+##                 ln(x) & if \lambda = 0\\ \end{cases}$$
+         
 ### The Box-Cox transformation does only work with positive data. Therefore, sometimes you need to shift the data with adding a fixed constant. The power of $\lambda$ needs to be tuned that the box-cox module in scipy package does this process for you.
 
 
