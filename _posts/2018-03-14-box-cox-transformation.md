@@ -3,6 +3,7 @@ layout : post
 title : "Box-Cox Transformation"
 date : 2018-03-14
 permalink: /box-cox-transformation/
+use_math: true
 ---
 ![glass-header](/images/boxcox-header.png)
 # Box-Cox Tranformation
