@@ -3,10 +3,12 @@ layout : post
 title : "Box-Cox Transformation"
 date : 2018-03-14
 permalink: /box-cox-transformation/
-
 ---
-![glass-header](/images/boxcox-header.png)
-# Box-Cox Tranformation
+![boxcox-header](/images/boxcox-header.png)
+
+
+
+
 
 ### Box-Cox tranformation is a simple generalization of the square root transformation and the log transformation.
 \begin{equation} 
