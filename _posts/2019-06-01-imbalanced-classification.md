@@ -3044,7 +3044,7 @@ _plot_xgboost_cv_score(cvr)
 ```
 
 
-![png](output_27_0.png)
+![png](/notebooks/imbalanced-classification_files/output_27_0.png)
 
 
 
@@ -3053,7 +3053,7 @@ _plot_importance(bst, figsize=(10,6), importance_type = "total_gain")
 ```
 
 
-![png](output_28_0.png)
+![png](/notebooks/imbalanced-classification_files/output_28_0.png)
 
 
 
@@ -3064,7 +3064,7 @@ shap.summary_plot(shap_Treevalues, df_X, plot_type = "bar", color = "pink", max_
 ```
 
 
-![png](output_29_0.png)
+![png](/notebooks/imbalanced-classification_files/output_29_0.png)
 
 
 ### As seen, attribute3 has not played an important role through the feature selection process. Therefore, I dropped it and build the final model based on that.
@@ -3118,7 +3118,7 @@ plt.show()
 
 
 
-![png](output_34_1.png)
+![png](/notebooks/imbalanced-classification_files/output_34_1.png)
 
 
 # Discussion:
