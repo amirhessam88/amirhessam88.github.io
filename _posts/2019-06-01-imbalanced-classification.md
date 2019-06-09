@@ -1,9 +1,10 @@
+---
 layout : post
 title : "Imbalanced Classification"
 date : 2019-06-01
 permalink: /imbalanced-classification/
 ---
-![imbalanced-header](/images/imbalanced-header.jpg)
+![imbalanced-header.jpg](/images/imbalanced-header.jpg)
 
 
 
