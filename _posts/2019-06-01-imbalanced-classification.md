@@ -7,7 +7,7 @@ permalink: /imbalanced-classification/
 ![imbalanced-header.jpg](/images/imbalanced-header.jpg)
 
 
-
+## Imbalanced classification (or classification problems with low prevalence (low number of instances in one of the classes) can be challenging. In this post, I have discussed how we can model a problem with prevalence of 0.09% for positive class using gradient boosting and generalized linear model.
 
 
 ```python
