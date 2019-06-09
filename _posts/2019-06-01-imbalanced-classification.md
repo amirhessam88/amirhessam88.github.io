@@ -3082,7 +3082,7 @@ _plot_roc_nfolds_xgboost(df_pruned, Y)
 ```
 
 
-![png](output_33_0.png)
+![png](/notebooks/imbalanced-classification_files/output_33_0.png)
 
 
 
