@@ -3,7 +3,7 @@ title : "Imbalanced Classification"
 date : 2019-06-01
 permalink: /imbalanced-classification/
 ---
-![imbalanced-classification](/images/imbalanced-header.jpg)
+![imbalanced-header](/images/imbalanced-header.jpg)
 
 
 
