@@ -4,7 +4,7 @@ title : "Adaptive Learning Optimizers For Neural Networks"
 date : 2019-06-08
 permalink: /adaptive-learning/
 ---
-![adaptive-header.jpg](/images/adaptive-header.jpg)
+![adaptive-header.jpeg](/images/adaptive-header.jpeg)
 
 
 ```python
