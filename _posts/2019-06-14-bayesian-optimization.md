@@ -6,6 +6,10 @@ permalink: /bayesian-optimization/
 ---
 ![bayesian-header.png](/images/bayesian-header.png)
 
+##  XGBoost has many hyper-paramters which need to be tuned to have an optimum model. There are many ways to find these tuned parameters such as grid-search or random search. However, bayesian optimization makes it easier and faster for us.
+
+## Gaussian processes (GPs) provide a principled, practical, and probabilistic approach in machine learning. GPs simply have an essential assumption that similar inputs give similar outputs. This simple and weak prior are actually very sensible for the effects of hyper-parameters. GPs are able to learn for each input dimension what the appropriate scale is for measuring similarity. GPs predict a Gaussian distribution of values rather than just predicting a single value. Bayesian optimization is a constrained global optimization approach built upon Bayesian inference and Gaussian process models to find the maximum value of an unknown function in the most efficient ways (less iterations).
+
 ```python
 # Loading libraries
 from bayes_opt import BayesianOptimization as bo
