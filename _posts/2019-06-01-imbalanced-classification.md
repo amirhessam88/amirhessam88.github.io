@@ -2770,11 +2770,11 @@ o_, d_ = _my_feature_selector(df_X, Y, n_iter = 10,
 
 
 
-![png](output_25_2.png)
+![png](/notebooks/imbalanced-classification_files/output_25_2.png)
 
 
 
-![png](output_25_3.png)
+![png](/notebooks/imbalanced-classification_files/output_25_3.png)
 
 
 
