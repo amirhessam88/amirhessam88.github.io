@@ -19,7 +19,7 @@ import requests
 from bs4 import BeautifulSoup
 ```
 
-# Here is the link to Trump's lies artcile from NY-Times. https://www.nytimes.com/interactive/2017/06/23/opinion/trumps-lies.html
+# Here is the link to Trump's lies artcile from NY-Times: [LINK](https://www.nytimes.com/interactive/2017/06/23/opinion/trumps-lies.html)
 
 # Here is the structure of the first lie:
  <span class="short-desc"><strong>Jan. 21&nbsp;</strong>“I wasn't a fan of Iraq. I didn't want to go into Iraq.” <span class="short-truth"><a href="https://www.buzzfeed.com/andrewkaczynski/in-2002-donald-trump-said-he-supported-invading-iraq-on-the" target="_blank">(He was for an invasion before he was against it.)</a></span></span>&nbsp;&nbsp;
