@@ -4,7 +4,7 @@ title : "Web Scraping using BeautifulSoup"
 date : 2019-08-12
 permalink: /webscarping-using-beautifulsoup/
 ---
-![regularization-header](/images/web-header.png)
+![webscraping-header](/images/web-header.png)
 
 
 
