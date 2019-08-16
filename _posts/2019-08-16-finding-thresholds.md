@@ -1,7 +1,7 @@
 ---
 layout : post
 title : "Finding Thresholds in Imbalanced Binary Classification"
-date : 2019-08-13
+date : 2019-08-16
 permalink: /finding-thresholds/
 ---
 ![finding-thresholds-header](/images/thresh-header.png)
@@ -142,7 +142,7 @@ def _threshold_finder(model, X, y_true):
     plt.xlabel("Threshold", fontsize = 12)
     plt.ylabel("Score", fontsize = 12)
     plt.legend(loc = 0)
-    plt.xlim([0.0025, 0.2])
+    plt.xlim([0.025, thresholds[np.argmin(abs(tpr + fpr - 1))]+0.2])
     plt.axvline(thresholds[np.argmin(abs(tpr + fpr - 1))], color="k", ls = "--")
     plt.title(F"Threshold = {thresholds[np.argmin(abs(tpr + fpr - 1))]:.3f}", fontsize = 12)
     
@@ -152,7 +152,7 @@ def _threshold_finder(model, X, y_true):
     plt.plot(thresholds2, f1[1:], label = "F1-Score")
     plt.plot(thresholds2, queue_rate, label = "Queue Rate")
     plt.legend(loc = 0)
-    plt.xlim([0.025, 0.25])
+    plt.xlim([0.025, thresholds2[np.argmin(abs(precision-recall))] + 0.2])
     plt.xlabel("Threshold", fontsize = 12)
     plt.ylabel("Score", fontsize = 12)
     plt.axvline(thresholds2[np.argmin(abs(precision-recall))], color="k", ls = "--")
@@ -194,6 +194,8 @@ def _plot_confusion_matrix(cm, classes,
     plt.tick_params(axis='both', which='major', labelsize=14)
     plt.tight_layout()
 ```
+
+# Device Failure Data
 
 ### First, I loaded the data into a pandas dataframe to get some idea.
 
@@ -550,9 +552,188 @@ _threshold_finder(model = model, X = X_test, y_true = y_test)
 ```
 
 
-![png](/notebooks/finding-thresholds_files/output_16_0.png)
+![png](/notebooks/finding-thresholds_files/output_17_0.png)
 
 
 
-![png](/notebooks/finding-thresholds_files/output_16_1.png)
+![png](/notebooks/finding-thresholds_files/output_17_1.png)
 
+
+# MNIST DATA
+
+
+```python
+from sklearn.datasets import fetch_openml
+mnist = fetch_openml("mnist_784", version = 1)
+mnist.keys()
+```
+
+
+
+
+    dict_keys(['data', 'target', 'feature_names', 'DESCR', 'details', 'categories', 'url'])
+
+
+
+
+```python
+X, y = mnist["data"], mnist["target"]
+X.shape
+```
+
+
+
+
+    (70000, 784)
+
+
+
+
+```python
+plt.figure()
+plt.imshow(X[1000].reshape(28, 28), cmap = "gray")
+plt.show()
+```
+
+
+![png](/notebooks/finding-thresholds_files/output_21_0.png)
+
+
+### As you know, minist contains 10 classes. So, we need to turn this multi-class data to a binary class.
+
+
+```python
+X_train, X_test, y_train, y_test = X[:60000], X[60000:], y[:60000], y[60000:]
+```
+
+
+```python
+y_train_0 = np.where(y_train == "0", 1, 0)
+y_test_0 = np.where(y_test == "0", 1, 0)
+```
+
+
+```python
+model = _clf_train(X_train, y_train_0, X_test, y_test_0)
+```
+
+    [0]	validation_0-auc:0.973597
+    Will train until validation_0-auc hasn't improved in 20 rounds.
+    [1]	validation_0-auc:0.97854
+    [2]	validation_0-auc:0.985121
+    [3]	validation_0-auc:0.984864
+    [4]	validation_0-auc:0.984705
+    [5]	validation_0-auc:0.986008
+    [6]	validation_0-auc:0.987206
+    [7]	validation_0-auc:0.988978
+    [8]	validation_0-auc:0.989422
+    [9]	validation_0-auc:0.989856
+    [10]	validation_0-auc:0.990381
+    [11]	validation_0-auc:0.990555
+    [12]	validation_0-auc:0.991208
+    [13]	validation_0-auc:0.991901
+    [14]	validation_0-auc:0.992248
+    [15]	validation_0-auc:0.993116
+    [16]	validation_0-auc:0.993295
+    [17]	validation_0-auc:0.99356
+    [18]	validation_0-auc:0.994208
+    [19]	validation_0-auc:0.994625
+    [20]	validation_0-auc:0.994797
+    [21]	validation_0-auc:0.994938
+    [22]	validation_0-auc:0.994881
+    [23]	validation_0-auc:0.995083
+    [24]	validation_0-auc:0.995208
+    [25]	validation_0-auc:0.995286
+    [26]	validation_0-auc:0.995402
+    [27]	validation_0-auc:0.995571
+    [28]	validation_0-auc:0.995561
+    [29]	validation_0-auc:0.995693
+    [30]	validation_0-auc:0.995979
+    [31]	validation_0-auc:0.996092
+    [32]	validation_0-auc:0.996214
+    [33]	validation_0-auc:0.996322
+    [34]	validation_0-auc:0.996352
+    [35]	validation_0-auc:0.99641
+    [36]	validation_0-auc:0.996402
+    [37]	validation_0-auc:0.996489
+    [38]	validation_0-auc:0.996557
+    [39]	validation_0-auc:0.996579
+    [40]	validation_0-auc:0.996637
+    [41]	validation_0-auc:0.996672
+    [42]	validation_0-auc:0.99685
+    [43]	validation_0-auc:0.996861
+    [44]	validation_0-auc:0.996935
+    [45]	validation_0-auc:0.996909
+    [46]	validation_0-auc:0.99693
+    [47]	validation_0-auc:0.996938
+    [48]	validation_0-auc:0.996977
+    [49]	validation_0-auc:0.997013
+    [50]	validation_0-auc:0.997113
+    [51]	validation_0-auc:0.99714
+    [52]	validation_0-auc:0.997175
+    [53]	validation_0-auc:0.997218
+    [54]	validation_0-auc:0.997237
+    [55]	validation_0-auc:0.997279
+    [56]	validation_0-auc:0.997314
+    [57]	validation_0-auc:0.997326
+    [58]	validation_0-auc:0.997386
+    [59]	validation_0-auc:0.997412
+    [60]	validation_0-auc:0.997424
+    [61]	validation_0-auc:0.997437
+    [62]	validation_0-auc:0.997439
+    [63]	validation_0-auc:0.997506
+    [64]	validation_0-auc:0.997521
+    [65]	validation_0-auc:0.997557
+    [66]	validation_0-auc:0.997573
+    [67]	validation_0-auc:0.997619
+    [68]	validation_0-auc:0.997634
+    [69]	validation_0-auc:0.997656
+    [70]	validation_0-auc:0.9977
+    [71]	validation_0-auc:0.997758
+    [72]	validation_0-auc:0.997782
+    [73]	validation_0-auc:0.997816
+    [74]	validation_0-auc:0.997846
+    [75]	validation_0-auc:0.997868
+    [76]	validation_0-auc:0.997896
+    [77]	validation_0-auc:0.997908
+    [78]	validation_0-auc:0.997916
+    [79]	validation_0-auc:0.997942
+    [80]	validation_0-auc:0.997937
+    [81]	validation_0-auc:0.997975
+    [82]	validation_0-auc:0.997996
+    [83]	validation_0-auc:0.998036
+    [84]	validation_0-auc:0.998106
+    [85]	validation_0-auc:0.998123
+    [86]	validation_0-auc:0.99815
+    [87]	validation_0-auc:0.998165
+    [88]	validation_0-auc:0.99818
+    [89]	validation_0-auc:0.998211
+    [90]	validation_0-auc:0.998225
+    [91]	validation_0-auc:0.998296
+    [92]	validation_0-auc:0.998316
+    [93]	validation_0-auc:0.998319
+    [94]	validation_0-auc:0.998359
+    [95]	validation_0-auc:0.998413
+    [96]	validation_0-auc:0.998415
+    [97]	validation_0-auc:0.998418
+    [98]	validation_0-auc:0.998432
+    [99]	validation_0-auc:0.99847
+
+
+
+```python
+_threshold_finder(model = model, X = X_test, y_true = y_test_0)
+```
+
+
+![png](/notebooks/finding-thresholds_files/output_26_0.png)
+
+
+
+![png](/notebooks/finding-thresholds_files/output_26_1.png)
+
+
+
+```python
+
+```
