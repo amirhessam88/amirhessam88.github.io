@@ -1,4 +1,4 @@
-# My Data Science Website using Jekyll + TEST
+# My Data Science Website using Jekyll
 # https://amirhessam88.github.io/
 
 ## Please cite the following paper in case you use any content of this repo.
