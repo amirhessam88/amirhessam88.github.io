@@ -223,7 +223,7 @@ myREC.plot_rec()
 ```
 
 
-![png](/notebooks/roc-vs-pr_files/output_11_0.png)
+![png](/notebooks/updated-regression-error-characteristics-curve_files/output_11_0.png)
 
 
 ### Currently, REC is also implemented in my Machine Learning Python Library, [SlickML](https://github.com/slickml/slick-ml) which can be easily installed via pip.
@@ -295,7 +295,7 @@ reg_metrics.plot()
 
 
 
-![png](/notebooks/roc-vs-pr_files/output_14_2.png)
+![png](/notebooks/updated-regression-error-characteristics-curve_files/output_14_2.png)
 
 
 ### Extra notes about the REC class
