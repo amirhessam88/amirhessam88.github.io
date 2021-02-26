@@ -1,6 +1,6 @@
 ---
 layout : post
-title : "Machine Learning Algorithms From Scrtach: Logistic Regression"
+title : "Machine Learning Algorithms From Scratch: Logistic Regression"
 date : 2021-02-26
 permalink: /mlalgs-logistic-regression/
 ---
