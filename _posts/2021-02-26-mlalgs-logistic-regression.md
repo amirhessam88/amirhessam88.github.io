@@ -64,11 +64,11 @@ plot_sigmoid(x)
 ![png](/notebooks/mlalgs-logistic-regression_files/output_5_0.png)
 
 
-### The main algorithm to develop Logistic Regression is based on updating weights using Gradient Descent approach iteratively.
-- Define linear model: $z = wx + b$
-- Define prediction: $\hat{y} = sigmoid(z) = sigmoid(wx + b) = \frac{1}{1 + \exp({-(wx+b)})}$
-- Update weights: $w = w - lr \times dw$ where $dw = \frac{1}{N} \Sigma_{i=1}^{N}(2x_i(\hat{y_i} - y_i))$
-- Update bias $b = b - lr \times db$ where $db = \frac{1}{N} \Sigma_{i=1}^{N}(\hat{y_i} - y_i)$
+## The main algorithm to develop Logistic Regression is based on updating weights using Gradient Descent approach iteratively.
+### - Define linear model: $z = wx + b$
+### - Define prediction: $\hat{y} = sigmoid(z) = sigmoid(wx + b) = \frac{1}{1 + \exp({-(wx+b)})}$
+### - Update weights: $w = w - lr \times dw$ where $dw = \frac{1}{N} \Sigma_{i=1}^{N}(2x_i(\hat{y_i} - y_i))$
+### - Update bias $b = b - lr \times db$ where $db = \frac{1}{N} \Sigma_{i=1}^{N}(\hat{y_i} - y_i)$
 
 
 ```python
@@ -181,7 +181,7 @@ class LogisticRegression:
         pos_class = []
         neg_class = []
         for i in range(len(y_pred_proba)):
-            if y_pred_proba[i] >= threshold and y_test[i] == 1:
+            if y_test[i] == 1:
                 pos_class.append(y_pred_proba[i])
             else:
                 neg_class.append(y_pred_proba[i])
