@@ -156,7 +156,7 @@ class LogisticRegression:
             Threshold to define predicted classes
         """
         y_pred_proba = self.predict_proba(X_test)
-        y_pred = [1 if x >= 0.5 else 0 for x in y_pred_proba]
+        y_pred = [1 if x >= threshold else 0 for x in y_pred_proba]
 
         return y_pred
 
