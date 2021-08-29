@@ -6,7 +6,7 @@ permalink: /about/
 
 My name is Amirhessam Tahmassebi.
 
-I am currently a Senior Data Scientist at [Rivian Automative](https://rivian.com), Palo Alto, CA. 
+I am currently a Senior Data Scientist at [Rivian Automotive](https://rivian.com), Palo Alto, CA. 
 I am also an affiliated courtesy faculty in the [Department of Scientific Computing](https://sc.fsu.edu) at [Florida State University](https://fsu.edu). 
 
 My official website is [amirhessam.com](https://www.amirhessam.com) and my Python Machine Learning Library is [SlickML](https://github.com/slickml/slick-ml).
